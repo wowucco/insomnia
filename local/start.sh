@@ -12,7 +12,7 @@ for app in "${apps[@]}"; do
     appDir="${projectDir}/${app}"
 
     if [ ! -d ${appDir} ]; then
-        git clone "git@github.com:wowucco/${apps[app]}.git" ${appDir}
+        git clone "git@github.com:wowucco/${app}.git" ${appDir}
     fi
 done
 
